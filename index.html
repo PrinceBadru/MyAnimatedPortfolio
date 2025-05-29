@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>   <!--import for icons -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--links the AOS library's CSS stylesheet to your HTML document -->
 </head>
 <body>
     <div class="container">
@@ -21,9 +21,9 @@
             </div>
 
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
 
             <div class="box-icons">
@@ -43,9 +43,9 @@
             
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
 
             <div class="social-sidebar">
@@ -66,7 +66,10 @@
                     Front-end Developer Portfolio
                 </div>
 
-                <h1 data-aos="fade-right" data-aos-duration="3000">Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span></h1>
+                <h1 data-aos="fade-right" data-aos-duration="3000" class="gradient-2">Providing 
+                    <span class="gradient">the best</span> 
+                    Project <span class="gradient">Experience</span>
+                </h1>
 
                 <p>I'm a front-end developer with experience in Website, Mobile and Software development. Check out my projects and skills.</p>
 
@@ -80,19 +83,21 @@
             <div class="scroll-down"></div>
         </section>
 
-         <section class="info-section">
+         <section class="info-section" id="about">
            
 
                  <div class="card">
                     <h1>Tech Stack</h1>
-                    <p>I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
+                    <p>I specialize in a variety of languages, frameworks, 
+                        and tools that allow me to build robust and scalable
+                         applications.</p>
                 
                     <img src="images/grid2.png" alt="">
                 </div>
 
                 <div class="card">
                     <h1>I’m very flexible with time zone communications & locations</h1>
-                    <p>I'm based in Italy, Bari and open to remote work worldwide.</p>
+                    <p>I'm based in Kampala, Uganda and open to remote work worldwide.</p>
                 
                     <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
 
@@ -101,14 +106,16 @@
 
                 <div class="card">
                     <h1>My Passion for Coding</h1>
-                    <p>I love solving problems and building things through code. Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+                    <p>I love solving problems and building things through code. 
+                        Programming isn't just my profession—it's my passion. I enjoy exploring new technologies, 
+                        and enhancing my skills.</p>
                 
                     <img src="images/grid4.png" alt="">
                 </div>
             </div> 
         </section>
 
-        <section class="my-project">
+        <section class="my-project" id="projects">
             <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
             <div class="project-card">
                 <div class="project-vidbox autoBlur" >
@@ -147,7 +154,7 @@
         </section>
 
         
-        <section class="skills-section">
+        <section class="skills-section" id="skills">
             <h1 class="section-title autoDisplay">
                 My Skills 💪
             </h1>
@@ -226,7 +233,7 @@
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script >
-      AOS.init();
+      AOS.init(); <!-- Animate on scroll-->
     </script>
 </body>
 </html>
